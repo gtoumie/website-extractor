@@ -16,7 +16,7 @@ This Project consists of the below:
 ## Getting Started
 In this section we'll discuss how to get the project up and running
 ### Prerequisites
-You'll need to have gradle installed
+You'll need to have [gradle](https://gradle.org/) installed
 * to start the webservice using gradle, please type the below command
   ```sh
   ./gradlew bootRun
