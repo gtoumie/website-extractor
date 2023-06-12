@@ -1,0 +1,3 @@
+rootProject.name = 'peer39'
+include 'urlextractor', 'webcategorizer', 'api'
+
