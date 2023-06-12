@@ -56,6 +56,31 @@ Using this API is done either via Shell, Postman or equivalent
 ![Postman](./assets/postman.png?raw=true "Postman screenshot")
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Discussion
+### Complexity
+Currently the complexity of the process is `O(NMK)` as 
+- `N` is the length of the text
+- `M` is the number of Categories
+- `K` is the max keyword length
+
+Improved complexity could be achieved by using a HashMap instead of
+List to store the Keywords within a category then finding the keyword will 
+not require a loop and can be done in `O(1)`
+the format will be `HashSet<String>` the key is the keyword and keywords are 
+stored directly as strings inside this set or extending HashSet and overriding 
+hashCode and equals functions.
+
+### Deployment
+We can consider using the following components in our K8s deployment:
+- Deployment: to create and manage the replicas of the application
+- Service: to provide a stable IP address and DNS name for the application
+- Ingress: to expose the application to the outside world
+- ConfigMap: to store the keyword categories and their associated keywords as a configuration file 
+- Secret: to store any sensitive information like API keys or passwords 
+- Prometheus: to monitor the application and collect metrics 
+- Grafana: to visualize the metrics and create dashboards 
+- Horizontal Pod Autoscaler (HPA): to automatically scale the application based on CPU or memory usage
+
 
 ## License
 Distributed under the MIT License. See `LICENSE.txt` for more information.

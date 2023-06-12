@@ -1,5 +1,7 @@
 package com.gtoumie.webcategorizer.model;
 
+import com.gtoumie.webcategorizer.exceptions.TooManyKeywordsException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,19 +22,10 @@ public class Category {
      * @param name of the Category
      */
     public Category(String name) {
-        this(name, new ArrayList<>());
+        this.name = name;
+        this.keywords = new ArrayList<>();
     }
 
-    /**
-     * This is another constructor, with it, you can initialize the class with a list of keywords
-     *
-     * @param name of the Category
-     * @param keywords List of CategoryKeyword objects that identifies with this category
-     */
-    public Category(String name, List<CategoryKeyword> keywords) {
-        this.name = name;
-        this.keywords = keywords;
-    }
 
     /**
      *  This method allows you to add keywords to the category
@@ -42,6 +35,9 @@ public class Category {
     public void addCategoryKeyword(CategoryKeyword categoryKeyword){
         if(this.keywords == null) {
             this.keywords = new ArrayList<>();
+        }
+        if(this.keywords.size()>1000){
+            throw new TooManyKeywordsException();
         }
         this.keywords.add(categoryKeyword);
     }
