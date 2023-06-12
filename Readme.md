@@ -54,8 +54,10 @@ _Below is an example of how you can instruct your audience on installing and set
 Using this API is done either via Shell, Postman or equivalent
 ![Shell](./assets/shell.png?raw=true "Shell screenshot")
 
+API to categorize websites 
 ![Postman-2](./assets/postman-2.png?raw=true "Postman-2 screenshot")
 
+API to get the Website's content
 ![Postman](./assets/postman.png?raw=true "Postman screenshot")
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
