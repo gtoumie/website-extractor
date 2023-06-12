@@ -11,5 +11,6 @@ repositories {
 }
 
 dependencies {
-	implementation project(':urlextractor')
+	implementation project(':URLExtractor')
+	testImplementation 'junit:junit:4.13'
 }

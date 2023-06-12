@@ -15,12 +15,15 @@ public class Runner {
      * This is a constant that acts as a field separator between categories
      */
     private static final String FIELD_SEPERATOR = ",";
+
+
+
     private static List<Category> categories;
 
     /**
      * This is a private method, called to initialize the categories and the keywords that identifies them
      */
-    private static void initializeModel(){
+    protected static void initializeModel(){
         categories = new ArrayList<>();
 
         Category starWarsCategory = new Category("Star Wars");
@@ -74,7 +77,7 @@ public class Runner {
      * @param categories list of categories to match against
      * @return String of comma-separated matching categories
      */
-    private static String categorizeWebsite(String text, List<Category> categories){
+    protected static String categorizeWebsite(String text, List<Category> categories){
         StringBuilder matchedCategories = new StringBuilder("");
         for(Category category: categories){
             if(category.matches(text)){
@@ -87,5 +90,7 @@ public class Runner {
         }
         return matchedCategories.toString();
     }
-
+    public static List<Category> getCategories() {
+        return categories;
+    }
 }

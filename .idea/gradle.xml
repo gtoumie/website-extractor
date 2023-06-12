@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
@@ -10,9 +11,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/api" />
-            <option value="$PROJECT_DIR$/urlextractor" />
-            <option value="$PROJECT_DIR$/webcategorizer" />
+            <option value="$PROJECT_DIR$/API" />
+            <option value="$PROJECT_DIR$/URLExtractor" />
+            <option value="$PROJECT_DIR$/WebCategorizer" />
           </set>
         </option>
       </GradleProjectSettings>

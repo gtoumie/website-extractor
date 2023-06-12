@@ -41,8 +41,12 @@ _Below is an example of how you can instruct your audience on installing and set
    ```
 5. Call the `getWebsiteCategory` API
    ```bash
-   curl --location 'http://localhost:8080/website/category?urls=http%3A%2F%2Fwww.starwars.com%2Chttps%3A%2F%2Fwww.imdb.com%2Ffind%3Fq%3Dstar%2Bwars%2526ref_%3Dnv_sr_sm%2Chttps%3A%2F%2Fedition.cnn.com%2Fsport'
+   curl --location 'http://localhost:8080/website/category?urls=http%3A%2F%2Fwww.starwars.com%2Chttps%3A%2F%2Fwww.imdb.com%2Ffind%3Fq%3Dstar%2Bwars%26ref_%3Dnv_sr_sm%2Chttps%3A%2F%2Fedition.cnn.com%2Fsport'
    ```
+6. Start Unit Test 
+    ```bash
+   ./gradlew test
+    ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->

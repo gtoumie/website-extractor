@@ -13,7 +13,7 @@ repositories {
 }
 
 dependencies {
-    implementation project(':urlextractor')
-    implementation project(':webcategorizer')
+    implementation project(':URLExtractor')
+    implementation project(':WebCategorizer')
     implementation 'org.springframework.boot:spring-boot-starter-web'
 }

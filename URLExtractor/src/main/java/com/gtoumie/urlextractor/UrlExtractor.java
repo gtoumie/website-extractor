@@ -28,7 +28,7 @@ public class UrlExtractor {
                 String websiteText = readWebsite(url);
                 result.put(url, websiteText);
             } catch (IOException ioe) {
-                result.put(url, ioe.getLocalizedMessage());
+                result.put(url, "ERROR: " + ioe.getLocalizedMessage());
             }
         }
         return result;
