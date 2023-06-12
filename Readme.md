@@ -26,24 +26,23 @@ You'll need to have gradle installed
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```bash
    git clone https://github.com/gtoumie/website-extractor.git
    ```
-3. Start SpringBoot webservice using gradle
+2. Start SpringBoot webservice using gradle
    ```bash
    ./gradlew bootRun
    ```
-4. Call the `getWebsiteText` API
+3. Call the `getWebsiteText` API
    ```bash
    curl --location 'http://localhost:8080/website/text?urls=https%3A%2F%2Fwww.msn.com%2Fen-nz%2Fhealth%2Fother%2Fqueen-elizabeth-s-10-daily-habits-that-helped-her-live-96-years%2Far-AA11EmVv%3Focid%3Dhpmsn%2526cvid%3D4ac35602878e4b30bacb92bc690cc71c%2526ei%3D18%2Chttps%3A%2F%2Fwww.newstalkzb.co.nz%2Fnews%2Fsport%2Fsuper-rugby-pacific-highlanders-lose-to-force-in-dismal-defeat%2F%2Chttps%3A%2F%2Fwww.glamour.de%2Ffrisuren%2Fartikel%2Fdauerwelle%2Chttps%3A%2F%2Fwww.bbc.com%2Chttps%3A%2F%2Fwww3.forbes.com%2Fbusiness%2F2020-upcoming-hottest-new-vehicles%2F13%2F%3Fnowelcome%2Chttps%3A%2F%2Fwww.tvblog.it%2Fpost%2F1681999%2Fvalerio-fabrizio-salvatori-gli-inseparabili-chi-sono-pechino-express-2020%2Chttp%3A%2F%2Fedition.cnn.com%2F'
    ```
-5. Call the `getWebsiteCategory` API
+4. Call the `getWebsiteCategory` API
    ```bash
    curl --location 'http://localhost:8080/website/category?urls=http%3A%2F%2Fwww.starwars.com%2Chttps%3A%2F%2Fwww.imdb.com%2Ffind%3Fq%3Dstar%2Bwars%26ref_%3Dnv_sr_sm%2Chttps%3A%2F%2Fedition.cnn.com%2Fsport'
    ```
-6. Start Unit Test 
+5. Start Unit Test 
     ```bash
    ./gradlew test
     ```
